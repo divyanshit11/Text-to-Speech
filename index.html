@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+<div class="voiceinator">
+    <h1>Text-To-Speech Converter</h1>
+    <select name="voice" id="voices">
+        <option value="Microsoft David - English (United States)">Microsoft David - English (United States) (en-US)</option>
+        <option value="Microsoft Ravi - English (India)">Microsoft Ravi - English (India) (en-IN)</option>
+        <option value="Microsoft Heera - English (India)">Microsoft Heera - English (India) (en-IN)</option>    
+        <option value="Microsoft Mark - English (United States)">Microsoft Mark - English (United States) (en-US)</option>
+        <option value="Microsoft Zira - English (United States)">Microsoft Zira - English (United States) (en-US)</option>
+        <option value="Google US English">Google US English (en-US)</option>
+        <option value="Google UK English Female">Google UK English Female (en-GB)</option>
+        <option value="Google UK English Male">Google UK English Male (en-GB)</option>
+    </select>
+    <label for="rate">Rate:</label>
+    <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+    <label for="pitch">Pitch:</label>
+    <input name="pitch" type="range" min="0" max="2" step="0.1">
+    <textarea name="text" placeholder="Start typing..."></textarea>
+    <button id="stop">Stop</button>
+    <button id="speak">Speak</button>
+  </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
